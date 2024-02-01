@@ -586,11 +586,11 @@ a:hover {
   text-decoration: underline;
 }
 .DownloadButton {
-  background: url(/greensteam/download.png) no-repeat;
+  background: url("download.png") no-repeat;
   border: none;
 }
 .DownloadButton:active {
-  background: url(/greensteam/download_pressed.png) no-repeat;
+  background: url("download_pressed.png") no-repeat;
 }
 .hide-back,.upload-toolbar,header {
   padding: 10px;
@@ -599,12 +599,13 @@ a:hover {
   border-bottom: solid 1px #292d23;
   border-left: solid 1px #899281;
   border-right: solid 1px #292d23;
+  margin-bottom: 1em;
 }
 :root a,
 :root .theme-dark a {
   color:#d8ded3;
 }
-:root .dialog-closer
+:root .dialog-closer,
 :root .theme-dark .dialog-closer {
   background: #4c5844;
   background-image: url("close2.png");
@@ -613,9 +614,9 @@ a:hover {
 }
 :root,
 :root .theme-dark {
-  --bg: #000;
+  --bg: #3e4637;
   --text: #999;
-  --ghost-contrast-alt: #181818;
+  --ghost-contrast-alt:  var(--ghost-contrast);
   --good-contrast: #fffa;
   --button-bg: #345;
   --button-text: #999;
@@ -692,10 +693,40 @@ input:not([type=checkbox],[type=range]), select, textarea{
   text-align: center;
 }
 ul.dir{
-  padding: 1em;
+  padding: 0;
+}
+.tiles-mode ul.dir li {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid 1px #292d23;
+  border-left: solid 1px #899281;
+  border-right: solid 1px #292d23;
+  border-top: solid 1px #899281;
+  background-color: #4c5844;
+  box-sizing: border-box;
+}
+.tiles-mode ul.dir{
+  gap: 0;
+}
+ul.dir li:nth-of-type(odd){
+  background-color: #3e4637;
+  padding: 0.4em 0.4em 0.4em;
+}
+ul.dir li {
+  display: block;
+  list-style-type: none;
+  padding: 0.4em 0.4em 0.4em;
+  border-bottom: solid 1px #4c5844;
+  border-left: solid 1px #899281;
+  border-right: solid 1px #292d23;
+  border-top: solid 1px #899281;
+  background-color: #4c5844;
+  box-sizing: border-box;
 }
 .dir{
-  border-top: solid 1px #899281;
   border-bottom: solid 1px #292d23;
   border-left: solid 1px #899281;
   border-right: solid 1px #292d23;
@@ -703,6 +734,7 @@ ul.dir{
   background-color: #4c5844;
   box-sizing: border-box;
   max-width: 780px;
+  border-top: solid 1px #899281;
 }
 .before-sliding{
   border-top: 0!important;
@@ -712,6 +744,7 @@ ul.dir{
 }
 .list-wrapper {
   min-height: 0;
+  margin: auto;
 }
 @media (min-width: 42em) {
   body::-webkit-scrollbar,
