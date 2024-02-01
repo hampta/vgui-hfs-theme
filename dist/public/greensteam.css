@@ -600,14 +600,26 @@ a:hover {
   border-left: solid 1px #899281;
   border-right: solid 1px #292d23;
 }
+:root a,
 :root .theme-dark a {
   color:#d8ded3;
 }
+:root .dialog-closer
 :root .theme-dark .dialog-closer {
   background: #4c5844;
   background-image: url("close2.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+:root,
+:root .theme-dark {
+  --bg: #000;
+  --text: #999;
+  --ghost-contrast-alt: #181818;
+  --good-contrast: #fffa;
+  --button-bg: #345;
+  --button-text: #999;
+  color-scheme: dark;
 }
 :root a {
   color:#d8ded3;
