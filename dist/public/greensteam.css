@@ -601,6 +601,12 @@ a:hover {
   border-right: solid 1px #292d23;
   margin-bottom: 1em;
 }
+.tiles-mode ul.dir li input[type=checkbox] {
+  margin: 0;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+}
 :root a,
 :root .theme-dark a {
   color:#d8ded3;

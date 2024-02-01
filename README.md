@@ -7,10 +7,9 @@ It is based on the [VGUI.css](https://github.com/AlpyneDreams/vgui.css) styleshe
 
 ## Screenshots
 
-![Screenshot 1](https://imgur.com/extnugn.png)
-![Screenshot 2](https://imgur.com/bDJ3rhs.png)
-![Screenshot 3](https://imgur.com/xbe867P.png)
-![Screenshot 4](https://imgur.com/qkAM5Vc.png)
+![Screenshot 1](https://imgur.com/0P2CmDO.png)
+![Screenshot 2](https://imgur.com/C5dUJzA.png)
+![Screenshot 3](https://imgur.com/0VA8pDK.png)
 
 ## License
 
